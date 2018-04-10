@@ -57,6 +57,7 @@ public class DBManager {
 	}
 	
 	public ArrayList<UserLocation> getUserLocationLocationNumber(int location_number){
+		
 		return mapper.getUserLocationLocationNumber(location_number);
 	}
 	

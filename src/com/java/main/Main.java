@@ -12,9 +12,13 @@ public class Main {
 		
 		//2018 03 31 10 00   /   WaterFall_2018/4/1
 		try {
-			String date_s = "2018-03-31 00:00:00.0"; 
+			String date_s = "2018-04-01 00:00:00.0"; 
 			SimpleDateFormat dt = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss"); 
 			Date date = dt.parse(date_s); 
+
+			date.setDate(0);
+			
+			
 			/*
 			
 			String input = "201803311000";
@@ -27,6 +31,7 @@ public class Main {
 			System.out.println(date.toString());
 			System.out.println(date.getMonth());
 			System.out.println(date.getYear());
+			System.out.println(date.getDay());
 		} catch (Exception e) {
 			// TODO: handle exception
 		}

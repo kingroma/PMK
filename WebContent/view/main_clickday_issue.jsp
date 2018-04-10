@@ -71,7 +71,7 @@ function reloadFromChildrend(){
 
 <script>
 //function
-var color = ["red","orange","yellow","green","skyblue","blue"];
+var color = ["white","white","white","white","white","white"];
 //function
 function issueNameColorSet(){
 	var index = 0;
@@ -120,6 +120,9 @@ function removeLocationIssue(event,issue_number){
 	background-color:black;
 	text-align:center;
 	font-size:40pt;
+	height:100px;
+	vertical-align:middle;
+	padding-top:35px;
 }
 .issueDiv{
 	padding:5px;
@@ -153,6 +156,10 @@ function removeLocationIssue(event,issue_number){
 	padding-left:95%;
 	color:red;
 	font-size:40pt;
+}
+.issueTexst{
+	padding-left:5%;
+	padding-right:5%;
 }
 </style>
 </head>

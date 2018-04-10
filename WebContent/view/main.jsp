@@ -65,6 +65,8 @@ body{
 	width:100%;
 	text-align:center;
 	font-size:40pt;
+	margin-bottom:30px;
+	margin-top:30px;
 }
 
 .calendar thead tr td{
@@ -73,10 +75,9 @@ body{
 	border:1px solid #e2e2e2;
 }
 .calendar tbody tr td{
-	
 	width:100px;
 	border:1px solid #e2e2e2;
-	height:200px;
+	height:150px;
 	vertical-align:top;
 }
 .calendarLeft thead tr td{
@@ -109,23 +110,31 @@ body{
 	display:none;
 }
 .calendarDateMonToFri{
-	text-align:center;
+	padding-left:10px;
+	text-align:left;
 	color:black;
+	font-size:20pt;
 }
 .calendarDateSat{
-	text-align:center;
+	padding-left:10px;
+	text-align:left;
 	color:blue;
+	font-size:20pt;
 }
 .calendarDateSun{
-	text-align:center;
+	padding-left:10px;
+	text-align:left;
 	color:red;
+	font-size:20pt;
 }
 .calendarDateAnotherDay{
-	text-align:center;
+	padding-left:10px;
+	text-align:left;
 	color:#aaaaaa;
+	font-size:20pt;
 }
 .weddingInfoDiv{
-	color:#abcdef;
+	color:black;
 	width:auto;
 	border-radius:10px;
 	text-align:right;
@@ -142,7 +151,6 @@ body{
 	margin-left:5px;
 	width:100px;
 	height:100px;
-	
 }
 .workDateIcon{
 	

@@ -1,10 +1,14 @@
 package com.java.user;
 
+import com.java.location.Location;
+
 public class UserLocation {
 	private int location_number;
 	private String user_id;
 	
 	private User user ;
+	private Location location;
+
 	
 	public int getLocation_number() {
 		return location_number;
@@ -24,5 +28,12 @@ public class UserLocation {
 	public void setUser(User user) {
 		this.user = user;
 	}
+	public Location getLocation() {
+		return location;
+	}
+	public void setLocation(Location location) {
+		this.location = location;
+	}
+	
 	
 }

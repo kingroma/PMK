@@ -202,6 +202,10 @@ public class Controller {
 	public ArrayList<UserLocation> getUserLocations(String user_id){
 		this.start();
 		ArrayList<UserLocation> userLocations = manager.getUserLocations(user_id);
+		for (UserLocation userLocation : userLocations) {
+			userLocation.setLocation(manager.getLocation(userLocation.getLocation_number()));
+		}
+		
 		this.end();
 		
 		return userLocations;
@@ -260,6 +264,11 @@ public class Controller {
 		
 		Location location = manager.getLocation(location_number);
 		location.setHalls(manager.getHalls(location.getLocation_number()));
+		location.setUserLocations(manager.getUserLocationLocationNumber(location_number));
+		for(UserLocation userLocation : location.getUserLocations()) {
+			userLocation.setUser(manager.getUser(userLocation.getUser_id()));
+		}
+		
 		this.end();
 		
 		return location;
@@ -327,8 +336,14 @@ public class Controller {
 	public Location getLocation(String location_number) {
 		this.start();
 		
-		Location location = manager.getLocation(location_number);
+		int location_num = Integer.parseInt(location_number);
+		
+		Location location = manager.getLocation(location_num);
 		location.setHalls(manager.getHalls(location.getLocation_number()));
+		location.setUserLocations(manager.getUserLocationLocationNumber(location_num));
+		for(UserLocation userLocation : location.getUserLocations()) {
+			userLocation.setUser(manager.getUser(userLocation.getUser_id()));
+		}
 		
 		this.end();
 		
@@ -503,6 +518,8 @@ public class Controller {
 		this.start();
 		
 		ArrayList<Wedding> weddings = manager.getWeddingsWithLocationNumberDate(location_number, work_date);
+		
+		  
 		
 		this.end();
 		return weddings;

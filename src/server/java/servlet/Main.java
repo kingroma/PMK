@@ -72,6 +72,7 @@ public class Main extends HttpServlet {
 							Hall h = (Hall)hall;
 							if(wedding_hall_number == h.getHall_number()) {
 								hallName = h.getName();
+								//hallNh.getNickname();
 								break;
 							}
 						}

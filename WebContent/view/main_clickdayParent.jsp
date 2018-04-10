@@ -40,6 +40,7 @@ body{
 	font-size:30pt;
 	padding:0px;
 	margin:0px;
+	padding:2%;
 }
 iframe{
 	position:fixed;
@@ -362,6 +363,7 @@ function selectMenuSelector(number,event){
 
 #iframeSelector{
 	width:100%;
+	margin-top:3%;
 }
 #iframeSelector td{
 	text-align:center;

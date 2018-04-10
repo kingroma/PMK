@@ -29,6 +29,8 @@ public class MyDate {
 		return sdf.format(new Date());
 	}
 	
+	
+	
 	public static Date changeStringToDate(String input) {
 		/*
 		String year = input.substring(0, 4);
@@ -68,6 +70,23 @@ public class MyDate {
 		result.setMinutes(Integer.parseInt(input.substring(10, 12)));
 		
 		return result;
+	}
+	
+	public static Date getDateUsingYearMonth(String year , String month) {
+		if(month.length()==1) {
+			month = "0"+month;
+		}
+		String date_s = year+"-"+month+"-01 00:00:00.0"; 
+		SimpleDateFormat dt = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+		Date date = null;
+		try {
+			date = dt.parse(date_s);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		//System.out.println(date.toString());
+		return date;
 	}
 	
 	public static String removeSlashFromJavascript(String input) {

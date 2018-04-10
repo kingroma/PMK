@@ -56,10 +56,11 @@
 
 /*  calendar css  */ 
 body{
+	
 	font-size:30pt;
 	width:100%;
 	height:100%;
-	padding:0px;
+	padding:2%;
 	margin:0px;
 }
 #ibody{
@@ -113,6 +114,9 @@ body{
 }
 .weddingName{
 	font-size:20pt;
+	padding:10px;
+	vertical-align:middle;
+	padding-top:19%;
 }
 iframe{
 	position:fixed;
@@ -210,7 +214,7 @@ function clickWeddingDetail(wedding_number){
 																String colorRGB = colors.get(""+hall.getHall_number());
 																%>
 																	<div onclick="clickWeddingDetail(<%=wedding.getWedding_number() %>)" class="wedding" style="background-color:<%=colorRGB %>;">
-																		<%=hall.getNickname() %>
+																		<!-- <%=hall.getNickname() %> -->
 																		<div class="weddingName">
 																			<%=wedding.getTitle() %>
 																		</div>
